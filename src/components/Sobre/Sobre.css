@@ -1,0 +1,31 @@
+/* seção sobre */
+section#sobre .fotoPerfil {
+  box-shadow: -1px 9px 32px 0px rgba(0, 0, 0, 0.75);
+  border-radius: 10px;
+  margin-top: 0px;
+}
+
+/* estilização ícones de programação */
+section#sobre .programmingIcon {
+  width: 50px;
+  height: 50px;
+  margin-top: 10px;
+}
+
+.d-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 490px) {
+  section#sobre .programmingIcon {
+    width: 35px;
+    height: 35px;
+  }
+  section#inicio h2 {
+    font-size: 3rem;
+  }
+  section#inicio span#subtitle {
+    font-size: 1rem;
+  }
+}

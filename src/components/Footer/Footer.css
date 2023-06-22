@@ -1,0 +1,22 @@
+/* Estilização footer */
+#footer {
+  padding: 15px;
+  color: #fff;
+  font-size: 14px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 300px;
+  z-index: 10000;
+  background-color: #021124;
+  transition: 0.3s;
+  text-align: center;
+}
+
+@media (max-width: 1024px) {
+  #footer {
+    position: fixed;
+    width: auto;
+    padding: 20px 15px;
+  }
+}
