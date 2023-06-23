@@ -1,0 +1,37 @@
+/* Estilizando controles do carousel */
+.carousel-indicators {
+  margin-bottom: -40px;
+}
+.carousel-control-prev {
+  justify-content: start;
+  margin-left: 1rem;
+
+  margin-bottom: 10rem;
+  width: auto;
+}
+.carousel-control-next {
+  justify-content: end;
+  margin-right: 1rem;
+
+  margin-bottom: 10rem;
+  width: auto;
+}
+
+/* Estilização icones de site */
+.siteIcons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.card-text {
+  text-align:justify,
+}
+
+@media (max-width: 1200px) {
+  .carousel-control-next,
+  .carousel-control-prev {
+    align-items: end;
+    margin-bottom: -2.5rem !important;
+  }
+}

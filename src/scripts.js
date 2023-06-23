@@ -27,42 +27,29 @@ navItem.forEach((item) => {
 let btnContainer = document.getElementById('navbar');
 let btns = btnContainer.getElementsByClassName('nav-link');
 for (let i = 0; i < btns.length; i++) {
-  btns[i].addEventListener('click', function () {
+  btns[i].addEventListener('click',() => {
     let current = document.getElementsByClassName('active');
     current[0].className = current[0].className.replace(' active', '');
     this.className += ' active';
   });
 }
 
-//  Ativar carregamento no botão de enviar formlário
-const btnEnviar = document.querySelector('#btnEnviar');
-const btnLoading = document.querySelector('#btnLoading');
-const input1 = document.querySelector('#nome');
-const input2 = document.querySelector('#email');
-const input3 = document.querySelector('#mensagem');
-
-btnEnviar.addEventListener('click', () => {
-  if (input1.value && input2.value && input3.value) {
-    btnLoading.style.display = 'block';
-    btnEnviar.style.display = 'none';
-  }
-});
-
-// Tirar o alert após 5 segundos
-setTimeout(() => {
-  document.querySelector('#alerta').style.display = 'none';
-}, 5000);
+// // Tirar o alert após 5 segundos
+// setTimeout(() => {
+//   document.querySelector('#alerta').style.display = 'none';
+// }, 5000);
 
 // Ativar Dark mode
 const carddark = document.querySelectorAll('.card');
 const sectionDark = document.querySelectorAll('.section-bg');
 
-function darkmode() {
+const darkMode = () => {
   let element = document.body;
   element.classList.toggle('dark-mode');
   sectionBgDark();
   cardDark();
 }
+export default darkMode;
 
 function cardDark() {
   const cardExample = document.querySelector('#cardtest');
@@ -85,5 +72,3 @@ function sectionBgDark() {
         element.classList.replace('section-bg-dark', 'section-bg');
       });
 }
-
-darkmode();

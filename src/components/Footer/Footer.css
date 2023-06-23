@@ -16,7 +16,8 @@
 @media (max-width: 1024px) {
   #footer {
     position: fixed;
-    width: auto;
+    margin-bottom: 0;
+    width: 100%;
     padding: 20px 15px;
   }
 }
