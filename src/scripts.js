@@ -13,6 +13,7 @@ menuMobile.addEventListener('click', () => {
 
 // Fechar menu lateral quando usar os atalhos
 const navItem = document.querySelectorAll('.nav-item');
+
 navItem.forEach((item) => {
   item.addEventListener('click', () => {
     if (body.classList.contains('menu-nav-active')) {
@@ -26,6 +27,7 @@ navItem.forEach((item) => {
 // Trocar classe active quando clicar em item
 let btnContainer = document.getElementById('navbar');
 let btns = btnContainer.getElementsByClassName('nav-link');
+
 for (let i = 0; i < btns.length; i++) {
   btns[i].addEventListener('click',() => {
     let current = document.getElementsByClassName('active');
@@ -44,7 +46,7 @@ const carddark = document.querySelectorAll('.card');
 const sectionDark = document.querySelectorAll('.section-bg');
 
 const darkMode = () => {
-  let element = document.body;
+  let element = document.html
   element.classList.toggle('dark-mode');
   sectionBgDark();
   cardDark();

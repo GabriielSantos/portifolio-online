@@ -51,7 +51,7 @@ class Aside extends Component  {
                   type="checkbox"
                   role="switch"
                   id="darkMode"
-                  onclick="darkMode"
+                  onclick='darkmode'
                 />
                 <label class="form-check-label" for="darkMode">Modo Noturno</label>
               </div>
