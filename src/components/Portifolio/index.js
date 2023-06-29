@@ -77,14 +77,14 @@ class PortifolioComponent extends Component  {
 
                       <div class="siteIcons">
                         <a
-                          href="https://github.com/joao-gabriel-herrera/Meu-portfolio.git"
+                          href="https://github.com/GabriielSantos/portifolio-online"
                           target="_blank"
                           aria-label="link repositorio"
                           class="btn btn-dark me-3" rel="noreferrer"
                           ><i class="bi bi-github"></i
                         ></a>
                         <a
-                          href="https://joaoherrera.vercel.app/"
+                          href="https://portifolio-online-five.vercel.app/portifolio"
                           target="_blank"
                           aria-label="link do site"
                           class="btn btn-primary" rel="noreferrer"
