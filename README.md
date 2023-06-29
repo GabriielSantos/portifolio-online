@@ -1,10 +1,3 @@
-# :construction: README em construção ! :construction:
-<!-- Olá, Tryber!
-Esse é apenas um arquivo inicial para o README do seu projeto.
-É essencial que você preencha esse documento por conta própria, ok?
-Não deixe de usar nossas dicas de escrita de README de projetos, e deixe sua criatividade brilhar!
-:warning: IMPORTANTE: você precisa deixar nítido:
-- quais arquivos/pastas foram desenvolvidos por você; 
-- quais arquivos/pastas foram desenvolvidos por outra pessoa estudante;
-- quais arquivos/pastas foram desenvolvidos pela Trybe.
--->
+Um de meus projetos mais complexos, meu portfólio pessoal onde tenho minhas habilidades e meus projetos expostos, feito com React.js, Javascript e Bootstrap 5 .
+
+Visite meu Portifólio: https://portifolio-online-git-master-gabriielsantos.vercel.app/portifolio
