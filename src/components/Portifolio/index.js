@@ -1,4 +1,16 @@
 import { Component } from "react";
+import android from '../../images/android.png';
+import construcao from '../../images/construcao.png';
+import cordel from '../../images/cordel.png';
+import login from '../../images/login.png';
+import pixel from '../../images/pixel.png';
+import portifolio1 from '../../images/portifolio1.png';
+import projetoPortifolio from '../../images/projetoPortifolio.png';
+import shoppingCart from '../../images/shoppingCart.png';
+import solarSystem from '../../images/solarSystem.png';
+import trybewarts from '../../images/trybewarts.png';
+import tryunfo from '../../images/tryunfo.png';
+import './Portifolio.css';
 
 class PortifolioComponent extends Component  {
   render() {
@@ -50,7 +62,7 @@ class PortifolioComponent extends Component  {
                   <div class="col">
                     <div class="card h-100">
                       <img
-                        src="../static/img/portfolio.webp"
+                        src={ projetoPortifolio }
                         class="card-img-top"
                         alt="Projeto Portfólio"
                       />
@@ -59,8 +71,7 @@ class PortifolioComponent extends Component  {
                         <p class="card-text">
                           Um de meus projetos mais complexos, meu portfólio
                           pessoal onde tenho minhas habilidades e meus projetos
-                          expostos, feito no modelo MVC com python flask,
-                          javascript e bootstrap 5 .
+                          expostos, feito com React.js, Javascript e Bootstrap 5 .
                         </p>
                       </div>
 
@@ -85,31 +96,28 @@ class PortifolioComponent extends Component  {
                   <div class="col">
                     <div class="card h-100">
                       <img
-                        src="../static/img/stella.webp"
+                        src={ construcao }
                         class="card-img-top"
-                        alt="Loja de perfumes online"
+                        alt="TrybeWallet"
                       />
                       <div class="card-body">
                         <h5 class="card-title text-center">
-                          Loja de perfumes on-line
+                          TrybeWallet
                         </h5>
                         <p class="card-text">
-                          Desenvolvi esse projeto totalmente responsivo com
-                          bootstrap 5, utilizei esse projeto para aprimorar
-                          minhas habilidades em bootstrap e responsividade web
-                          utilizando o conceito "mobile-first".
+                          CSS EM CONSTRUÇÃO
                         </p>
                       </div>
                       <div class="siteIcons">
                         <a
-                          href="https://github.com/joao-gabriel-herrera/Stella-Scents.git"
+                          href="https://github.com/GabriielSantos/trybewallet"
                           target="_blank"
                           aria-label="link repositorio"
                           class="btn btn-dark me-3" rel="noreferrer"
                           ><i class="bi bi-github"></i
                         ></a>
                         <a
-                          href="https://joao-gabriel-herrera.github.io/Stella-Scents/"
+                          href=""
                           target="_blank"
                           aria-label="link do site"
                           class="btn btn-primary" rel="noreferrer"
@@ -121,142 +129,28 @@ class PortifolioComponent extends Component  {
                   <div class="col">
                     <div class="card h-100">
                       <img
-                        src="../static/img/form.webp"
+                        src={ construcao }
                         class="card-img-top"
-                        alt="Formulário de registro e login"
+                        alt="TrybeTunes"
                       />
                       <div class="card-body">
                         <h5 class="card-title text-center">
-                          Formulário de registro e login
+                          TrybeTunes
                         </h5>
                         <p class="card-text">
-                          Desenvolvi esse projeto totalmente responsivo com
-                          bootstrap 5, se trata de um formulário de login e
-                          registro utilizando conceitos minimalistas e
-                          ilustrações do unDraw.
+                          CSS EM CONSTRUÇÃO
                         </p>
                       </div>
                       <div class="siteIcons">
                         <a
-                          href="https://github.com/joao-gabriel-herrera/Projeto-Form-Bootstrap.git"
+                          href="https://github.com/GabriielSantos/trybetunes"
                           target="_blank"
                           aria-label="link repositorio"
                           class="btn btn-dark me-3" rel="noreferrer"
                           ><i class="bi bi-github"></i
                         ></a>
                         <a
-                          href="https://joao-gabriel-herrera.github.io/Projeto-Form-Bootstrap/"
-                          target="_blank"
-                          aria-label="link do site"
-                          class="btn btn-primary" rel="noreferrer"
-                          ><i class="bi bi-link-45deg"></i
-                        ></a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="carousel-item" data-bs-interval="10000">
-                <div class="row row-cols-1 row-cols-xl-3 g-4">
-                  <div class="col">
-                    <div class="card h-100">
-                      <img
-                        src="../static/img/art.webp"
-                        class="card-img-top"
-                        alt="Site de arte urbana"
-                      />
-                      <div class="card-body">
-                        <h5 class="card-title text-center">
-                          Site de arte urbana
-                        </h5>
-                        <p class="card-text">
-                          Meu primeiro projeto em bootstrap, onde comecei a me
-                          familiarizar com o conceito de grid, aproveitei também
-                          para fazer um modal de contato com o bootstrap.
-                        </p>
-                      </div>
-                      <div class="siteIcons">
-                        <a
-                          href="https://github.com/joao-gabriel-herrera/Art.git"
-                          target="_blank"
-                          aria-label="link repositorio"
-                          class="btn btn-dark me-3" rel="noreferrer"
-                          ><i class="bi bi-github"></i
-                        ></a>
-                        <a
-                          href="https://joao-gabriel-herrera.github.io/Art/"
-                          target="_blank"
-                          class="btn btn-primary"
-                          aria-label="link do site" rel="noreferrer"
-                          ><i class="bi bi-link-45deg"></i
-                        ></a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col">
-                    <div class="card h-100">
-                      <img
-                        src="../static/img/chronos.webp"
-                        class="card-img-top"
-                        alt="Site de soluções técnologicas"
-                      />
-                      <div class="card-body">
-                        <h5 class="card-title text-center">
-                          Site de soluções tecnológicas
-                        </h5>
-                        <p class="card-text">
-                          Projeto desenvolvido como prova para a faculdade, no
-                          qual utilizei HTML, CSS, JavaScript para realizar o
-                          formulário, foi meu primeiro grande projeto e me
-                          motivou bastante para continuar os estudos.
-                        </p>
-                      </div>
-                      <div class="siteIcons">
-                        <a
-                          href="https://github.com/joao-gabriel-herrera/Chronos.git"
-                          target="_blank"
-                          aria-label="link repositorio"
-                          class="btn btn-dark me-3" rel="noreferrer"
-                          ><i class="bi bi-github"></i
-                        ></a>
-                        <a
-                          href="https://joao-gabriel-herrera.github.io/Chronos/"
-                          target="_blank"
-                          aria-label="link do site"
-                          class="btn btn-primary" rel="noreferrer"
-                          ><i class="bi bi-link-45deg"></i
-                        ></a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col">
-                    <div class="card h-100">
-                      <img
-                        src="../static/img/calculadora.webp"
-                        class="card-img-top"
-                        alt="Calculadora animada"
-                      />
-                      <div class="card-body">
-                        <h5 class="card-title text-center">
-                          Calculadora animada
-                        </h5>
-                        <p class="card-text">
-                          Meu primeiro projeto utilizando javascript, fiz ele
-                          com o auxílio de um video no youtube, com ela aprendi
-                          sobre animações no css e cálculos em javascript,
-                          utilizei o estilo Neumorphism.
-                        </p>
-                      </div>
-                      <div class="siteIcons">
-                        <a
-                          href="https://github.com/joao-gabriel-herrera/Calculadora.git"
-                          target="_blank"
-                          aria-label="link repositorio"
-                          class="btn btn-dark me-3" rel="noreferrer"
-                          ><i class="bi bi-github"></i
-                        ></a>
-                        <a
-                          href="https://joao-gabriel-herrera.github.io/Calculadora/"
+                          href=""
                           target="_blank"
                           aria-label="link do site"
                           class="btn btn-primary" rel="noreferrer"
@@ -272,31 +166,31 @@ class PortifolioComponent extends Component  {
                   <div class="col">
                     <div class="card h-100">
                       <img
-                        src="../static/img/pokedex.webp"
+                        src={ shoppingCart }
                         class="card-img-top"
-                        alt="Pokédex usando PokeAPI"
+                        alt="Shopping Cart"
                       />
                       <div class="card-body">
                         <h5 class="card-title text-center">
-                          Pokédex usando PokeAPI
+                          Shopping Cart
                         </h5>
                         <p class="card-text">
-                          Projeto feito em HTML, CSS e JavaScript, na onde
-                          desenvolvi habilidades em consumo de API pelo método
-                          fetch. Totalmente responsivo devido ao uso de medidas
-                          que se adaptam ao font-size atual da página
+                          Projeto de um E-commerce que faz uma requisição a uma API 
+                          do mercado livre, utilizando javascript puro,
+                          este projeto foi feito em grupo, onde nos deparamos com os 
+                          possíveis conflitos de git.
                         </p>
                       </div>
                       <div class="siteIcons">
                         <a
-                          href="https://github.com/joao-gabriel-herrera/Pokedex-usando-PokeAPI.git"
+                          href="https://github.com/GabriielSantos/shopping-cart"
                           target="_blank"
                           aria-label="link repositorio"
                           class="btn btn-dark me-3" rel="noreferrer"
                           ><i class="bi bi-github"></i
                         ></a>
                         <a
-                          href="https://joao-gabriel-herrera.github.io/Pokedex-usando-PokeAPI/"
+                          href="https://gabriielsantos.github.io/shopping-cart/"
                           target="_blank"
                           aria-label="link do site"
                           class="btn btn-primary" rel="noreferrer"
@@ -308,32 +202,29 @@ class PortifolioComponent extends Component  {
                   <div class="col">
                     <div class="card h-100">
                       <img
-                        src="../static/img/mydevnotes.webp"
+                        src={ tryunfo } 
                         class="card-img-top"
-                        alt="Bloco de notas online"
+                        alt="Tryunfo"
                       />
                       <div class="card-body">
                         <h5 class="card-title text-center">
-                          Bloco de notas online
+                          Tryunfo
                         </h5>
                         <p class="card-text">
-                          Projeto desenvolvido com bootstrap, e javascript, onde
-                          pude aprimorar minhas habilidades em javascript
-                          utilizando o mesmo para criar notas, editar, deletar e
-                          até mesmo clonar, utilizei também o salvamento do JSON
-                          em local storage.
+                          Neste projeto, foram usados conceitos de Componentes e manipulação de Estados em React.
+                          Através da manipulação de estados foi possível realizar o projeto proposto pela Trybe de criar um deck de jogo de trunfo, e posteriormente a ação de jogabilidade contra o computador.
                         </p>
                       </div>
                       <div class="siteIcons">
                         <a
-                          href="https://github.com/joao-gabriel-herrera/My-DevNotes-clone-google-keep.git"
+                          href="https://github.com/GabriielSantos/tryunfo"
                           target="_blank"
                           aria-label="link repositorio"
                           class="btn btn-dark me-3" rel="noreferrer"
                           ><i class="bi bi-github"></i
                         ></a>
                         <a
-                          href="https://joao-gabriel-herrera.github.io/My-DevNotes-clone-google-keep/"
+                          href="https://gabriielsantos.github.io/tryunfo/"
                           target="_blank"
                           aria-label="link do site"
                           class="btn btn-primary" rel="noreferrer"
@@ -345,31 +236,31 @@ class PortifolioComponent extends Component  {
                   <div class="col">
                     <div class="card h-100">
                       <img
-                        src="../static/img/seguranca.webp"
+                        src={ solarSystem }
                         class="card-img-top"
-                        alt="Segurança virtual"
+                        alt="Solar System"
                       />
                       <div class="card-body">
                         <h5 class="card-title text-center">
-                          Segurança virtual
+                          Solar System
                         </h5>
                         <p class="card-text">
-                          Esse projeto é bem simples, porém foi meu primeiro
-                          projeto em javascript onde realizo uma validação do
-                          texto digitado e faço a varredura da array. Nomes
-                          permitidos: Marcelo, Amanda, Sabrina, Rafael...
+                          Neste projeto, tive meu primeiro contato com essa ferramenta tão 
+                          importante e utilizada no mercado Front-End, o React.js.
+                          Foram implementados os Componentes de forma organizada e reutilizável 
+                          e o CSS foi replicado a partir do Figma disponibilizado no projeto.
                         </p>
                       </div>
                       <div class="siteIcons">
                         <a
-                          href="https://github.com/joao-gabriel-herrera/Seguran-a-virtual.git"
+                          href="https://github.com/GabriielSantos/solar-system"
                           target="_blank"
                           aria-label="link repositorio"
                           class="btn btn-dark me-3" rel="noreferrer"
                           ><i class="bi bi-github"></i
                         ></a>
                         <a
-                          href="https://joao-gabriel-herrera.github.io/Seguran-a-virtual/"
+                          href="https://gabriielsantos.github.io/solar-system/"
                           target="_blank"
                           aria-label="link do site"
                           class="btn btn-primary" rel="noreferrer"
@@ -385,31 +276,32 @@ class PortifolioComponent extends Component  {
                   <div class="col">
                     <div class="card h-100">
                       <img
-                        src="../static/img/ClimaAki.webp"
+                        src={ portifolio1 }
                         class="card-img-top"
-                        alt="Aplicação de previsão de tempo"
+                        alt="Meu Primeiro Portifólio"
                       />
                       <div class="card-body">
                         <h5 class="card-title text-center">
-                          ClimaAki - OpenWeather API
+                          Meu Primeiro Portifólio
                         </h5>
                         <p class="card-text">
-                          Projeto feito em HTML, CSS e JavaScript, onde executei
-                          o consumo da API OpenWeather para dados sobre clima
-                          com background dinâmico pelo Unsplash.Totalmente
-                          responsivo.
+                          Primeiro portifólio criado, englobando grande parte dos conhecimentos 
+                          adquiridos ao longo do curso do Professor Guanabara,  como: 
+                          iFrames, Media-Query, responsividade, Formulários, entre outros. Utilizei 
+                          também conceitos iniciais de JavaScript para criar um efeito de menu "hamburguer", 
+                          aplicado à logo "GS".
                         </p>
                       </div>
                       <div class="siteIcons">
                         <a
-                          href="https://github.com/joao-gabriel-herrera/ClimaAki.git"
+                          href="https://github.com/GabriielSantos/gabriel-santos"
                           target="_blank"
                           aria-label="link repositorio"
                           class="btn btn-dark me-3" rel="noreferrer"
                           ><i class="bi bi-github"></i
                         ></a>
                         <a
-                          href="https://climaaki.vercel.app/"
+                          href="https://gabriielsantos.github.io/gabriel-santos/"
                           target="_blank"
                           aria-label="link do site"
                           class="btn btn-primary" rel="noreferrer"
@@ -421,30 +313,174 @@ class PortifolioComponent extends Component  {
                   <div class="col">
                     <div class="card h-100">
                       <img
-                        src="../static/img/DevPiano.webp"
+                        src={ pixel }
                         class="card-img-top"
-                        alt="Piano Online"
+                        alt="Pixels Art"
                       />
                       <div class="card-body">
                         <h5 class="card-title text-center">
-                          DevPiano - piano online
+                          Pixels Art
                         </h5>
                         <p class="card-text">
-                          Projeto desenvolvido com HTML CSS e JavaScript no qual
-                          desenvolvi habilidades no quesito de manipulação de
-                          áudio e funções em JavaScript.
+                          Criado no curso da trybe onde pude consolidar os conhecimentos 
+                          de HTML5, CSS3 e JS, aplicando funções, capturando elementos e 
+                          trabalhando com LocalStorage.
                         </p>
                       </div>
                       <div class="siteIcons">
                         <a
-                          href="https://github.com/joao-gabriel-herrera/DevPiano.git"
+                          href="https://github.com/GabriielSantos/pixels-art"
                           target="_blank"
                           aria-label="link repositorio"
                           class="btn btn-dark me-3" rel="noreferrer"
                           ><i class="bi bi-github"></i
                         ></a>
                         <a
-                          href="https://dev-piano.vercel.app/"
+                          href="https://gabriielsantos.github.io/pixels-art/"
+                          target="_blank"
+                          aria-label="link do site"
+                          class="btn btn-primary" rel="noreferrer"
+                          ><i class="bi bi-link-45deg"></i
+                        ></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card h-100">
+                      <img
+                        src={ trybewarts }
+                        class="card-img-top"
+                        alt="TrybeWarts"
+                      />
+                      <div class="card-body">
+                        <h5 class="card-title text-center">
+                          TrybeWarts
+                        </h5>
+                        <p class="card-text">
+                          Criado no curso da trybe onde pude consolidar os conhecimentos 
+                          de formulários, Flexbox e utilizar bastante da biblioteca Bootstrap 
+                          em meu CSS. E neste projeto onde foi desenvolvido em dupla, 
+                          tive a oortuniade de lidar com conflitos de Git.
+                        </p>
+                      </div>
+                      <div class="siteIcons">
+                        <a
+                          href="https://github.com/GabriielSantos/trybewarts"
+                          target="_blank"
+                          aria-label="link repositorio"
+                          class="btn btn-dark me-3" rel="noreferrer"
+                          ><i class="bi bi-github"></i
+                        ></a>
+                        <a
+                          href="https://trybewarts-nine.vercel.app/"
+                          target="_blank"
+                          aria-label="link do site"
+                          class="btn btn-primary" rel="noreferrer"
+                          ><i class="bi bi-link-45deg"></i
+                        ></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item" data-bs-interval="10000">
+                <div class="row row-cols-1 row-cols-xl-3 g-4">
+                  <div class="col">
+                    <div class="card h-100">
+                      <img
+                        src={ login }
+                        class="card-img-top"
+                        alt="Projeto Login"
+                      />
+                      <div class="card-body">
+                        <h5 class="card-title text-center">
+                          Projeto Login
+                        </h5>
+                        <p class="card-text">
+                          Esse projeto é bem simples, porém foi um projeto
+                          onde trabalhei com a responsividade em um formulário
+                          para diferentes tamanhos de telas, e com efeito degradê.
+                        </p>
+                      </div>
+                      <div class="siteIcons">
+                        <a
+                          href="https://github.com/GabriielSantos/projeto-login"
+                          target="_blank"
+                          aria-label="link repositorio"
+                          class="btn btn-dark me-3" rel="noreferrer"
+                          ><i class="bi bi-github"></i
+                        ></a>
+                        <a
+                          href="https://gabriielsantos.github.io/projeto-login/"
+                          target="_blank"
+                          aria-label="link do site"
+                          class="btn btn-primary" rel="noreferrer"
+                          ><i class="bi bi-link-45deg"></i
+                        ></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card h-100">
+                      <img
+                        src={ cordel }
+                        class="card-img-top"
+                        alt="Desafio Cordel"
+                      />
+                      <div class="card-body">
+                        <h5 class="card-title text-center">
+                          Desafio Cordel
+                        </h5>
+                        <p class="card-text">
+                          Projeto de um site criado em um curso de HTML5 e CSS3.  
+                          Englobando conhecimentos como: Tornar o site responsivo; 
+                          HTML semântico; paletas de cores, fontes e sombreamentos; 
+                           e efeito Parallax em imagens.
+                        </p>
+                      </div>
+                      <div class="siteIcons">
+                        <a
+                          href="https://github.com/GabriielSantos/desafio-cordel"
+                          target="_blank"
+                          aria-label="link repositorio"
+                          class="btn btn-dark me-3" rel="noreferrer"
+                          ><i class="bi bi-github"></i
+                        ></a>
+                        <a
+                          href="https://gabriielsantos.github.io/desafio-cordel/"
+                          target="_blank"
+                          aria-label="link do site"
+                          class="btn btn-primary" rel="noreferrer"
+                          ><i class="bi bi-link-45deg"></i
+                        ></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card h-100">
+                      <img
+                        src={ android }
+                        class="card-img-top"
+                        alt="Projeto Android"
+                      />
+                      <div class="card-body">
+                        <h5 class="card-title text-center">
+                          Projeto Android
+                        </h5>
+                        <p class="card-text">
+                          Projeto de um site criado em um curso de HTML5 e CSS3.  Englobando conhecimentos como: Tornar o site responsivo; HTML semântico; Trabalhar com listas, paletas de cores, fontes e sombreamentos; Trabalhar com margens, padding, bordas e links.
+                        </p>
+                      </div>
+                      <div class="siteIcons">
+                        <a
+                          href="https://github.com/GabriielSantos/projeto-android"
+                          target="_blank"
+                          aria-label="link repositorio"
+                          class="btn btn-dark me-3" rel="noreferrer"
+                          ><i class="bi bi-github"></i
+                        ></a>
+                        <a
+                          href="https://gabriielsantos.github.io/projeto-android/"
                           target="_blank"
                           aria-label="link do site"
                           class="btn btn-primary" rel="noreferrer"
