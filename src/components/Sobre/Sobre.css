@@ -5,6 +5,10 @@ section#sobre .fotoPerfil {
   margin-top: 0px;
 }
 
+.sobre {
+  position: fixed;
+}
+
 /* estilização ícones de programação */
 section#sobre .programmingIcon {
   width: 50px;

@@ -20,6 +20,7 @@ import './Sobre.css';
 class SobreComponent extends Component {
   render() {
     return (
+      <>
       <section id="sobre" className="container mt-5">
         <div className="row w-100">
           <div className="col-md-12" data-anime="down">
@@ -218,6 +219,7 @@ class SobreComponent extends Component {
           </div>
         </div>
       </section>
+      </>
     );
   }
 }
