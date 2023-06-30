@@ -30,7 +30,7 @@ class CompetenciasComponent extends Component  {
                   className="programmingIcon align-self-end me-2"
                   alt="agilidade"
                 />
-                <p className="mb-0 align-self-center text-dark fw-semibold fs-5">
+                <p className="mb-0 align-self-center text fw-semibold fs-5">
                   Agilidade de aprendizagem
                 </p>
               </div>
@@ -40,7 +40,7 @@ class CompetenciasComponent extends Component  {
                   className="programmingIcon align-self-end me-2"
                   alt="comunicacao"
                 />
-                <p className="mb-0 align-self-center text-dark fw-semibold fs-5">
+                <p className="mb-0 align-self-center text fw-semibold fs-5">
                   Comunicação
                 </p>
               </div>
@@ -50,7 +50,7 @@ class CompetenciasComponent extends Component  {
                   className="programmingIcon align-self-end me-2"
                   alt="proatividade"
                 />
-                <p className="mb-0 align-self-center text-dark fw-semibold fs-5">
+                <p className="mb-0 align-self-center text fw-semibold fs-5">
                   Proatividade
                 </p>
               </div>
@@ -60,7 +60,7 @@ class CompetenciasComponent extends Component  {
                   className="programmingIcon align-self-end me-2"
                   alt="organizacao"
                 />
-                <p className="mb-0 align-self-center text-dark fw-semibold fs-5">
+                <p className="mb-0 align-self-center text fw-semibold fs-5">
                   Organização
                 </p>
               </div>
@@ -72,7 +72,7 @@ class CompetenciasComponent extends Component  {
                   className="programmingIcon align-self-end me-2"
                   alt="capacidade analitica"
                 />
-                <p className="mb-0 align-self-center text-dark fw-semibold fs-5">
+                <p className="mb-0 align-self-center text fw-semibold fs-5">
                   Capacidade análitica
                 </p>
               </div>
@@ -82,7 +82,7 @@ class CompetenciasComponent extends Component  {
                   className="programmingIcon align-self-end me-2"
                   alt="flexibilidade"
                 />
-                <p className="mb-0 align-self-center text-dark fw-semibold fs-5">
+                <p className="mb-0 align-self-center text fw-semibold fs-5">
                   Flexibilidade
                 </p>
               </div>
@@ -92,7 +92,7 @@ class CompetenciasComponent extends Component  {
                   className="programmingIcon align-self-end me-2"
                   alt="trabalho em equipe"
                 />
-                <p className="mb-0 align-self-center text-dark fw-semibold fs-5">
+                <p className="mb-0 align-self-center text fw-semibold fs-5">
                   Trabalho em equipe
                 </p>
               </div>
@@ -102,7 +102,7 @@ class CompetenciasComponent extends Component  {
                   className="programmingIcon align-self-end me-2"
                   alt="comprometimento"
                 />
-                <p className="mb-0 align-self-center text-dark fw-semibold fs-5">
+                <p className="mb-0 align-self-center text fw-semibold fs-5">
                   Comprometimento
                 </p>
               </div>

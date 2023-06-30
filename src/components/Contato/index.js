@@ -118,7 +118,7 @@ export default function ContatoComponent() {
                       <div className="form-floating mb-3">
                         <input
                           type="text"
-                          className="form-control"
+                          className="form-control "
                           id="nome"
                           placeholder="nome"
                           name="nome"

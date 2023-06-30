@@ -5,6 +5,10 @@
   padding: 1rem;
 }
 
+.text {
+  color: black;
+}
+
 /* estilização ícones de programação */
 section#competencias .programmingIcon {
   width: 50px;

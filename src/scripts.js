@@ -37,17 +37,17 @@ for (let i = 0; i < btns.length; i++) {
   });
 }
 
-// Ativar Dark mode
-const carddark = document.querySelectorAll('.card');
-const sectionDark = document.querySelectorAll('.section-bg');
 
-const darkMode = () => {
-  let element = document.html
+const darkMode1 = () => {
+  // Ativar Dark mode
+  const carddark = document.querySelectorAll('.card');
+  const sectionDark = document.querySelectorAll('section-bg');
+  
+  let element = document.querySelector('html')
   element.classList.toggle('dark-mode');
   sectionBgDark();
   cardDark();
-}
-export default darkMode;
+
 
 function cardDark() {
   const cardExample = document.querySelector('#cardtest');
@@ -70,9 +70,10 @@ function sectionBgDark() {
         element.classList.replace('section-bg-dark', 'section-bg');
       });
 }
+}
 
 // Ativar Dark mode Bootstrap5
-const darkMode2 = () => {
+const darkMode = () => {
   
   const getStoredTheme = () => localStorage.getItem('theme')
   const setStoredTheme = theme => localStorage.setItem('theme', theme)
@@ -104,7 +105,7 @@ const darkMode2 = () => {
 
     const themeSwitcherText = document.querySelector('#bd-theme-text')
     const activeThemeIcon = document.querySelector('.theme-icon-active use')
-    const btnToActive = document.querySelector(`[data-bs-theme-value="${theme}"]`)
+    const btnToActive = document.querySelector('form-check-input')
     const svgOfActiveBtn = btnToActive.querySelector('svg use').getAttribute('href')
 
     document.querySelectorAll('[data-bs-theme-value]').forEach(element => {
@@ -144,3 +145,5 @@ const darkMode2 = () => {
       })
   })
 }
+
+export default darkMode;

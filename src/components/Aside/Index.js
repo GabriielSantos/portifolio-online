@@ -4,21 +4,28 @@ import perfil from '../../images/CV.png';
 import FooterAside from '../FooterAside';
 import './Aside.css';
 
-// // Trocar classe active quando clicar em item
-// const btnContainer = document.getElementById('navbar');
-// console.log(btnContainer);
-// let btns = btnContainer.getElementsByClassName('nav-link');
-  
-// for (let i = 0; i < btns.length; i++) {
-//   btns[i].addEventListener('click',() => {
-//     let current = document.getElementsByClassName('active');
-//     current[0].className = current[0].className.replace(' active', '');
-//     this.className += ' active';
-//   });
-// }
 class Aside extends Component  {
-
-
+  
+  changeTheme = () => {
+    const bodyTheme = document.querySelector('.bodyTheme')
+    const atribute = bodyTheme.dataset.bsTheme;
+    
+    if (atribute === 'light') {
+      bodyTheme.dataset.bsTheme = 'dark';
+      const input = document.querySelectorAll('.text-dark');
+      input.forEach((elem) => {
+        elem.classList.remove('text-dark');
+        elem.classList.add('text-light');
+      })
+    } else {
+      bodyTheme.dataset.bsTheme = 'light';
+      const input = document.querySelectorAll('.text-light');
+      input.forEach((elem) => {
+        elem.classList.remove('text-light');
+        elem.classList.add('text-dark');
+      })
+    }
+  }
   render() {
     return (
       <>
@@ -63,7 +70,7 @@ class Aside extends Component  {
                   className="form-check-input"
                   type="checkbox"
                   role="switch"
-                  onClick="darkmode"
+                  onClick={ () => this.changeTheme() }
                 />
                 <label className="form-check-label" for="darkMode">Modo Noturno</label>
               </div>
