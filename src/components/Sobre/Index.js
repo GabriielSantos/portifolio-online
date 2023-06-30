@@ -15,16 +15,17 @@ import react from '../../images/react.svg';
 import redux from '../../images/redux.svg';
 import rtl from '../../images/rtl.png';
 import trello from '../../images/trello.svg';
+import Footer from '../Footer/Index';
 import './Sobre.css';
 
 class SobreComponent extends Component {
   render() {
     return (
       <>
-      <section id="sobre" className="container mt-5">
+      <section id="sobre" className="container mt-0">
         <div className="row w-100">
           <div className="col-md-12" data-anime="down">
-            <h2>
+            <h2 class="pt-3 pb-2">
               <i className="bi bi-person me-2" aria-hidden="true" />
               Sobre
             </h2>
@@ -219,6 +220,7 @@ class SobreComponent extends Component {
           </div>
         </div>
       </section>
+      <Footer />
       </>
     );
   }

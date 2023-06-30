@@ -1,6 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
 
+[data-bs-theme="dark"] {
+  --bs-body-color: var(--bs-white);
+  --bs-body-color-rgb: #{to-rgb($white)};
+  --bs-body-bg-rgb: #{to-rgb($white)};
+  --bs-tertiary-bg: #{$white};
+  --bs-text-dark: #{to-rgb($white)};
+
+  --text-dark-color: var(--bs-white);
+  --bs-text-dark-color-rgb: #{to-rgb($white)};
+  
+}
+
 html,
 body {
   font-family: "Ubuntu", Arial;
@@ -11,11 +23,7 @@ body {
 /* Aréa da imagem */
 #main {
   margin-left: 300px;
-}
-
-.dark-mode {
-  background-color: #353535;
-  color: #fff;
+  height: 100%;
 }
 
 .text-shadow {

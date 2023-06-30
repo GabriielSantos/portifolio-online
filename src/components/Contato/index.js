@@ -2,6 +2,7 @@ import emailjs from '@emailjs/browser';
 import { useState } from "react";
 import Swal from 'sweetalert2';
 import './Contato.css';
+import Footer from '../Footer/Index';
 
 export default function ContatoComponent() {
   const [name, setName] = useState('');
@@ -69,29 +70,29 @@ export default function ContatoComponent() {
 
     return (
        <>
-        <section id="contato" class="pb-5 pt-5">
-          <div class="container mb-5">
-            <h2 class="pt-3 pb-3">Contato</h2>
-            <div class="row">
-              <div class="col-xl-5" data-anime="left">
-                <div class="card p-5 shadow border-0">
-                  <div class="row">
-                    <div class="endereco col-xxl-6">
-                      <h4><i class="bi bi-phone me-2"></i>Celular</h4>
+        <section id="contato" className="pb-5 pt-5">
+          <div className="container mb-5">
+            <h2 className="pt-3 pb-3">Contato</h2>
+            <div className="row">
+              <div className="col-xl-5 pt-0 mb-3" data-anime="left">
+                <div className="card p-5 shadow border-0">
+                  <div className="row">
+                    <div className="endereco col-xxl-6">
+                      <h4><i className="bi bi-phone me-2"></i>Celular</h4>
                       <p>(35) 9 9109-4101</p>
                     </div>
-                    <div class="whatsapp col-xxl-6 mb-2">
-                      <h4><i class="bi bi-whatsapp me-2"></i>WhatsApp</h4>
+                    <div className="whatsapp col-xxl-6 mb-2">
+                      <h4><i className="bi bi-whatsapp me-2"></i>WhatsApp</h4>
                       <a
                         href="http://api.whatsapp.com/send?phone=3591094101"
-                        class="btn btn-success rounded-pill"
+                        className="btn btn-success rounded-pill"
                         aria-label="enviar mensagem via whatsapp para Gabriel"
                         target="_blank" rel="noreferrer"
-                        ><i class="bi bi-send-fill me-2"></i>Falar com Gabriel</a
+                        ><i className="bi bi-send-fill me-2"></i>Falar com Gabriel</a
                       >
                     </div>
-                    <div class="localizacao col-xxl-6 align-self-end">
-                      <h4><i class="bi bi-geo-alt me-2"></i> Localização:</h4>
+                    <div className="localizacao col-xxl-6 align-self-end">
+                      <h4><i className="bi bi-geo-alt me-2"></i> Localização:</h4>
                     </div>
                   </div>
                   <iframe
@@ -106,18 +107,18 @@ export default function ContatoComponent() {
                   </iframe>
                 </div>
               </div>
-              <div class="col-xl-7 mt-5 mt-md-0" data-anime="up">
-                <div class="card p-5 h-100 shadow border-0">
-                  <h4 class="mb-3">
-                    <i class="bi bi-envelope-at"></i> Entrar em contato via
+              <div className="col-xl-7 mt-5 mt-md-0" data-anime="up">
+                <div className="card p-5 h-100 shadow border-0">
+                  <h4 className="mb-3">
+                    <i className="bi bi-envelope-at"></i> Entrar em contato via
                     e-mail:
                   </h4>
-                  <form class="row g-3" action="/send" method="POST">
-                    <div class="col-md-6">
-                      <div class="form-floating mb-3">
+                  <form className="row g-3" action="/send" method="POST">
+                    <div className="col-md-6">
+                      <div className="form-floating mb-3">
                         <input
                           type="text"
-                          class="form-control"
+                          className="form-control"
                           id="nome"
                           placeholder="nome"
                           name="nome"
@@ -125,16 +126,16 @@ export default function ContatoComponent() {
                           onChange={(e) => setName(e.target.value)}
                           value={ name }
                         />
-                        <label for="nome" class="text-dark"
+                        <label for="nome" className="text-dark"
                           >Insira seu nome...</label
                         >
                       </div>
                     </div>
-                    <div class="col-md-6">
-                      <div class="form-floating">
+                    <div className="col-md-6">
+                      <div className="form-floating">
                         <input
                           type="email"
-                          class="form-control"
+                          className="form-control"
                           id="email"
                           placeholder="email"
                           name="email"
@@ -142,15 +143,15 @@ export default function ContatoComponent() {
                           onChange={(e) => setEmail(e.target.value)}
                           value={ email }
                         />
-                        <label for="email" class="text-dark"
+                        <label for="email" className="text-dark"
                           >Insira seu e-mail...</label
                         >
                       </div>
                     </div>
-                    <div class="col-12">
-                      <div class="form-floating">
+                    <div className="col-12">
+                      <div className="form-floating">
                         <textarea
-                          class="form-control"
+                          className="form-control"
                           placeholder="comentario"
                           id="mensagem"
                           name="mensagem"
@@ -158,19 +159,19 @@ export default function ContatoComponent() {
                           onChange={(e) => setMessage(e.target.value)}
                           value={ message }
                         ></textarea>
-                        <label for="mensagem" class="text-dark"
+                        <label for="mensagem" className="text-dark"
                           >Insira sua mensagem aqui...</label
                         >
                       </div>
                     </div>
-                    <div class="col-12 d-flex justify-content-center">
+                    <div className="col-12 d-flex justify-content-center">
                       <button
                         id="btnEnviar"
                         type="submit"
-                        class="btn btn-primary rounded-pill"
+                        className="btn btn-primary rounded-pill"
                         onClick={ sendEmail }
                       >
-                        <i class="bi bi-send-fill me-2"></i>Enviar mensagem
+                        <i className="bi bi-send-fill me-2"></i>Enviar mensagem
                       </button>
                     </div>
                   </form>
@@ -179,6 +180,7 @@ export default function ContatoComponent() {
             </div>
           </div>
         </section>
+        <Footer />
        </>
     );
 }

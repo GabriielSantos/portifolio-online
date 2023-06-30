@@ -1,5 +1,5 @@
 /* Estilização footer */
-#footer2 {
+#footer {
   padding: 15px;
   color: #fff;
   font-size: 14px;
@@ -14,10 +14,11 @@
 }
 
 @media (max-width: 1024px) {
-  #footer2 {
-    position: relative;
+  #footer {
+    display: none;
+    /* position: fixed;
     bottom: 0;
     width: 100%;
-    padding: 20px 15px;
+    padding: 20px 15px; */
   }
 }

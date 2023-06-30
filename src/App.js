@@ -13,13 +13,12 @@ import Sobre from './pages/Sobre';
 
 import Aside from './components/Aside/Index';
 
-
 class App extends React.Component {
   render(){
     return (
       <>
-      <body data-bs-spy="scroll" data-bs-target="#navbar" tabindex="0">
-          <Aside /> 
+      <body data-bs-spy="scroll" data-bs-target="#navbar" tabindex="0" data-bs-theme="dark">
+        <Aside /> 
         <main id="main">
           <Switch>
             <Route exact path="/" component={ Home } />

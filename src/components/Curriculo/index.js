@@ -1,18 +1,20 @@
 import { Component } from "react";
 import './Curriculo.css';
+import Footer from "../Footer/Index";
 
 class CurriculoComponent extends Component  {
   render() {
     return (
-       <section id="curriculo" class="cv mt-5 section-bg">
-        <div class="container pb-5">
-          <h2 class="pt-3 pb-4">
-            <i class="bi bi-file-earmark me-2" aria-hidden="true"></i>Currículo
+      <>
+       <section id="curriculo" className="cv mt-0 ">
+        <div className="container pb-5">
+          <h2 className="pt-3 pb-4">
+            <i className="bi bi-file-earmark me-2" aria-hidden="true"></i>Currículo
           </h2>
-          <div class="row">
-            <div class="col-md-6">
-              <h3 class="cv-title">Educação</h3>
-              <div class="cv-item" data-anime="up">
+          <div className="row">
+            <div className="col-md-6">
+              <h3 className="cv-title">Educação</h3>
+              <div className="cv-item" data-anime="up">
                 <h4>DESENVOLVIMENTO WEB FULL STACK</h4>
                 <h5>2023-2024</h5>
                 <p><em>Trybe</em></p>
@@ -23,7 +25,7 @@ class CurriculoComponent extends Component  {
                   de Soft Skills.
                 </p>
               </div>
-              <div class="cv-item" data-anime="up">
+              <div className="cv-item" data-anime="up">
                 <h4>ENGENHARIA CIVIL</h4>
                 <h5>2016-2021</h5>
                 <p><em>Centro Universitário de Itajubá - FEPI</em></p>
@@ -31,7 +33,7 @@ class CurriculoComponent extends Component  {
                   Curso bacharelado na área de Engenharia Civil.
                 </p>
               </div>
-              <div class="cv-item" data-anime="up">
+              <div className="cv-item" data-anime="up">
                 <h4>TÉCNICO EM MECATRÔNICA</h4>
                 <h5>2013-2014</h5>
                 <p><em>Colégio de Itajubá</em></p>
@@ -40,9 +42,9 @@ class CurriculoComponent extends Component  {
                 </p>
               </div>
             </div>
-            <div class="col-md-6">
-              <h3 class="cv-title">Profissional</h3>
-              <div class="cv-item" data-anime="up">
+            <div className="col-md-6">
+              <h3 className="cv-title">Profissional</h3>
+              <div className="cv-item" data-anime="up">
                 <h4>DESENVOLVEDOR FRONT END</h4>
                 <h5>Mai / 2023 – Atualmente</h5>
                 <p><em>Freelance</em></p>
@@ -52,7 +54,7 @@ class CurriculoComponent extends Component  {
                   e frameworks mediante necessidade.
                 </p>
               </div>
-              <div class="cv-item" data-anime="up">
+              <div className="cv-item" data-anime="up">
                 <h4>ASSISTENTE ADM. | COMPRADOR </h4>
                 <h5>Set / 2021 – Jan / 2023</h5>
                 <p><em>Tekno Sistemas de Engenharia LTDA</em></p>
@@ -60,7 +62,7 @@ class CurriculoComponent extends Component  {
                   | Controle de Almoxarifado | Controle de Estoque | Delegação de Serviços | Fiscalização de Serviços.
                 </p>
               </div>
-              <div class="cv-item" data-anime="up">
+              <div className="cv-item" data-anime="up">
                 <h4>ESTAGIÁRIO ENGENHARIA CIVIL</h4>
                 <h5>Ago / 2020 - Ago / 2021</h5>
                 <p><em>DAC Engenharia</em></p>
@@ -70,7 +72,7 @@ class CurriculoComponent extends Component  {
                   Levantamentos topográficos | Elaboração de superfícies | Liderança e Trabalho em equipe.
                 </p>
               </div>
-              <div class="cv-item" data-anime="up">
+              <div className="cv-item" data-anime="up">
                 <h4>ATENDIMENTO AO CLIENTE</h4>
                 <h5>Abr / 2018 - Mar / 2020</h5>
                 <p><em>The Gustta Gastronomia LTDA</em></p>
@@ -78,7 +80,7 @@ class CurriculoComponent extends Component  {
                   Organização do local de trabalho, utensílios e geladeiras.
                 </p>
               </div>
-              <div class="cv-item" data-anime="up">
+              <div className="cv-item" data-anime="up">
                 <h4>ATENDIMENTO AO CLIENTE</h4>
                 <h5>Set / 2012 - Abr / 2014</h5>
                 <p><em>Centrocópia</em></p>
@@ -89,6 +91,8 @@ class CurriculoComponent extends Component  {
           </div>
         </div>
       </section>
+      <Footer />
+      </>
     );
   }
 }

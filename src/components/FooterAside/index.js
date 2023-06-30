@@ -1,10 +1,10 @@
 import { Component } from "react";
-import './Footer.css';
+import './FooterAside.css';
 
-class Footer extends Component  {
+class FooterAside extends Component  {
   render() {
     return (
-       <footer id="footer2">
+       <footer id="footer">
         <div className="container">
           <div className="text-center">
             &copy; Copyright <strong>Gabriel Santos</strong>
@@ -15,4 +15,4 @@ class Footer extends Component  {
   }
 }
 
-export default Footer;
+export default FooterAside;
