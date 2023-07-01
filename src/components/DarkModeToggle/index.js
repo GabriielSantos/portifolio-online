@@ -3,7 +3,6 @@ import click2 from './sounds/click2.mp3'
 import click3 from './sounds/click3.mp3'
 
 class DarkmodeToggle extends Component {
-
   state = {
     darkmode: false,
   }
