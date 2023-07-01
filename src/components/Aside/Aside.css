@@ -100,6 +100,9 @@ a {
     text-decoration: none;
 }
 
+.inputTheme {
+  margin-left: 70px;
+}
 
 /* Responsividade mobile */
 i.menu-mobile {

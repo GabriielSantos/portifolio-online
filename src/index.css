@@ -11,3 +11,14 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 } */
+
+@tailwind utilities;
+
+
+.bg-sun:after {
+  background-image: url(../src/components/DarkModeToggle/darkmodeimages/sun.svg);
+}
+
+.bg-moon:after {
+  background-image: url(../src/components/DarkModeToggle/darkmodeimages/moon.svg);
+}

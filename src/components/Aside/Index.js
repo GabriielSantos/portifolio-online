@@ -1,32 +1,12 @@
 import { Component } from "react";
 import { Link } from 'react-router-dom';
 import perfil from '../../images/CV.png';
+import DarkmodeToggle from "../DarkModeToggle";
 import FooterAside from '../FooterAside';
 import './Aside.css';
 
 class Aside extends Component  {
-  
-  changeTheme = () => {
-    const bodyTheme = document.querySelector('.bodyTheme')
-    const atribute = bodyTheme.dataset.bsTheme;
-    
-    if (atribute === 'light') {
-      bodyTheme.dataset.bsTheme = 'dark';
-      const input = document.querySelectorAll('.text-dark');
-      input.forEach((elem) => {
-        elem.classList.remove('text-dark');
-        elem.classList.add('text-light');
-      })
-    } else {
-      bodyTheme.dataset.bsTheme = 'light';
-      const input = document.querySelectorAll('.text-light');
-      input.forEach((elem) => {
-        elem.classList.remove('text-light');
-        elem.classList.add('text-dark');
-      })
-    }
-  }
-  render() {
+    render() {
     return (
       <>
       <i className="bi bi-list menu-mobile"></i>
@@ -64,15 +44,9 @@ class Aside extends Component  {
                 target="_blank" rel="noreferrer"
               ></a>
             </div>
-            <div className="d-flex justify-content-center mt-3 mb-2 text-white">
-              <div className="form-check form-switch">
-                <input
-                  className="form-check-input"
-                  type="checkbox"
-                  role="switch"
-                  onClick={ () => this.changeTheme() }
-                />
-                <label className="form-check-label" for="darkMode">Modo Noturno</label>
+            <div className="d-flex justify-content-left mt-4 mb-3 text-white inputTheme">
+              <div className="form-check form-switch mt-2">
+                <DarkmodeToggle />
               </div>
             </div>
           </section>
