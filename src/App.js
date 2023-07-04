@@ -17,7 +17,6 @@ class App extends React.Component {
   render(){
     return (
       <>
-      <body data-bs-spy="scroll" data-bs-target="#navbar" tabindex="0" data-bs-theme="light" className='bodyTheme'>
         <Aside /> 
         <main id="main">
           <Switch>
@@ -30,7 +29,6 @@ class App extends React.Component {
             <Route exact path="/contato" component={ Contato } />
           </Switch>
         </main>
-      </body>
       </>
     );
   }
