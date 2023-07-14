@@ -10,8 +10,9 @@ import shoppingCart from '../../images/shoppingCart.png';
 import solarSystem from '../../images/solarSystem.png';
 import trybewarts from '../../images/trybewarts.png';
 import tryunfo from '../../images/tryunfo.png';
-import './Portifolio.css';
+import trybeWallet from '../../images/trybeWallet.png';
 import Footer from "../Footer/Index";
+import './Portifolio.css';
 
 class PortifolioComponent extends Component  {
   render() {
@@ -98,7 +99,7 @@ class PortifolioComponent extends Component  {
                   <div className="col">
                     <div className="card h-100">
                       <img
-                        src={ construcao }
+                        src={ trybeWallet }
                         className="card-img-top"
                         alt="TrybeWallet"
                       />
@@ -107,7 +108,9 @@ class PortifolioComponent extends Component  {
                           TrybeWallet
                         </h5>
                         <p className="card-text">
-                          CSS EM CONSTRUÇÃO
+                          Projeto de uma carteira digital com conversão de moedas estrangeiras.
+                          Este projeto foi feito utilizando React.js, gerenciamento de estados e 
+                          a estilização foi feita com auxilio de Material-UI.
                         </p>
                       </div>
                       <div className="siteIcons">
@@ -119,7 +122,7 @@ class PortifolioComponent extends Component  {
                           ><i className="bi bi-github"></i
                         ></a>
                         <a
-                          href=""
+                          href="https://trybewallet-lime.vercel.app/"
                           target="_blank"
                           aria-label="link do site"
                           className="btn btn-primary" rel="noreferrer"
