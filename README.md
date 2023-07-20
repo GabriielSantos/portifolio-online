@@ -1,6 +1,6 @@
 # Portifólio Online
 
-# Contexto
+## Contexto
 Meu portifólio pessoal, onde tenho minhas habilidades e projetos apresentados.
 
 ## Técnologias usadas
